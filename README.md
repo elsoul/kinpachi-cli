@@ -1,3 +1,5 @@
+![Kinpachi](https://user-images.githubusercontent.com/20677823/228285425-ab1fecc9-982a-44c9-8aca-b01394771d41.png)
+
 ## Kinpachi AI Kit
 
 Born & Ready to Assist Your OpenAI Chat Product
