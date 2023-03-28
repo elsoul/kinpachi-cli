@@ -2,6 +2,7 @@ import Dotenv from 'dotenv'
 import { Command } from 'commander'
 import fs from 'fs'
 import { VERSION } from '@/lib/version'
+import { setupIam } from './cli'
 
 export type KinpachiCloudConfig = {
   api: GCPConfig
@@ -75,6 +76,12 @@ async function main() {
       .command('init')
       .description('Deploy Kinpachi AI Kit to Google Cloud Platform')
       .action(async () => {})
+    program
+      .command('iam')
+      .description('Setup IAM for Google Cloud Platform')
+      .action(async () => {
+        await setupIam()
+      })
     await program.parseAsync(process.argv)
   } catch (error) {
     console.log(error)
